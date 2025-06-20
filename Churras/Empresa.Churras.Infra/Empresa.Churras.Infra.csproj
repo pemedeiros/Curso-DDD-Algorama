@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Empresa.Churras.Domain\Empresa.Churras.Domain.csproj" />
+    <ProjectReference Include="D:\Downloads\CursoDDD-aula012.shared.kernel\CursoDDD-aula012.shared.kernel\Kernel\Kernel.Infra\Kernel.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
