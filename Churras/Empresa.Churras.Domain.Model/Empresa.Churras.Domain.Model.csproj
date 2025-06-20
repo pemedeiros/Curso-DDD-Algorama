@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="D:\Downloads\CursoDDD-aula012.shared.kernel\CursoDDD-aula012.shared.kernel\Kernel\Kernel.Domain.Model\Kernel.Domain.Model.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Empresa.Churras.Domain\Empresa.Churras.Domain.csproj" />
+    <ProjectReference Include="D:\Downloads\CursoDDD-aula012.shared.kernel\CursoDDD-aula012.shared.kernel\Kernel\Kernel.Infra\Kernel.Infra.csproj" />
   </ItemGroup>
 
 </Project>
