@@ -8,10 +8,23 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Empresa.Churras.Domain.Model.Entities.Evento">
-    <Position X="8.5" Y="2.5" Width="3.25" />
+    <Position X="8" Y="2" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AACAQAACAAAAAAAgAAQAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAACAAAAAAAgAAAAAAAAAAAAAAAAAAIAAEAAAAA=</HashCode>
       <FileName>Entities\Evento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DonoDaCasa" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ColegasConfirmados" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Empresa.Churras.Domain.Model.Entities.EventoColegaConfirmado">
+    <Position X="8.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Entities\EventoColegaConfirmado.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
