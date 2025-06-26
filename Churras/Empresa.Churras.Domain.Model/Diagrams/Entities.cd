@@ -6,6 +6,9 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAA=</HashCode>
       <FileName>Entities\Colega.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Endereco" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Empresa.Churras.Domain.Model.Entities.Evento">
     <Position X="8" Y="2" Width="3.25" />
@@ -15,16 +18,41 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="DonoDaCasa" />
+      <Property Name="Periodo" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="ColegasConfirmados" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Empresa.Churras.Domain.Model.Entities.EventoColegaConfirmado">
-    <Position X="8.75" Y="5.25" Width="1.5" />
+    <Position X="8.75" Y="5.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Entities\EventoColegaConfirmado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Empresa.Churras.Domain.Model.ValueObjects.Periodo">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>ValueObjects\Periodo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Empresa.Churras.Domain.Model.ValueObjects.Endereco">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAACIEAAAAAACAAAIAAAAAAAAAAAABAAg=</HashCode>
+      <FileName>ValueObjects\Endereco.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Coordenadas" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Empresa.Churras.Domain.Model.ValueObjects.Coordenadas" Collapsed="true">
+    <Position X="3.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValueObjects\Coordenadas.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
