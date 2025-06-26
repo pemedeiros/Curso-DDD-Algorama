@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Kernel.Domain.Model.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Empresa.Churras.Domain.Model.Entities
 {
-    public class EventoColegaConfirmado
+    public class EventoColegaConfirmado : ValueObject<EventoColegaConfirmado>
     {
         public long ColegaKey { get; set; }
         public string ColegaNome { get; set; }
