@@ -10,22 +10,19 @@
       <Property Name="Endereco" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Empresa.Churras.Domain.Model.Entities.Evento">
+  <Class Name="Empresa.Churras.Domain.Model.ValueObjects.Evento">
     <Position X="8" Y="2" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAQAACAAAAAAAgAAAAAAAAAAAAAAAAAAIAAEAAAAA=</HashCode>
+      <HashCode>AAAAQAACAAAAAAAgAAAAAAAAAAAAAAAAAAIAAEAAAAQ=</HashCode>
       <FileName>Entities\Evento.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="DonoDaCasa" />
       <Property Name="Periodo" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="ColegasConfirmados" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Empresa.Churras.Domain.Model.Entities.EventoColegaConfirmado">
-    <Position X="8.75" Y="5.25" Width="2.5" />
+    <Position X="7.75" Y="5.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Entities\EventoColegaConfirmado.cs</FileName>
