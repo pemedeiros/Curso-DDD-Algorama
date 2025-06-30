@@ -9,24 +9,19 @@
     <ShowAsAssociation>
       <Property Name="Endereco" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Empresa.Churras.Domain.Model.ValueObjects.Evento">
+  <Class Name="Empresa.Churras.Domain.Model.Entities.Evento">
     <Position X="8" Y="2" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAQAACAAAAAAAgAAAAAAAAAAAAAAAAAAIAAEAAAAQ=</HashCode>
+      <HashCode>AAAAQAACAgAAAAAgAABAAAAAAAAAAAAAAAIAAEEAAAQ=</HashCode>
       <FileName>Entities\Evento.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="DonoDaCasa" />
       <Property Name="Periodo" />
     </ShowAsAssociation>
-  </Class>
-  <Class Name="Empresa.Churras.Domain.Model.Entities.EventoColegaConfirmado">
-    <Position X="7.75" Y="5.25" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAA=</HashCode>
-      <FileName>Entities\EventoColegaConfirmado.cs</FileName>
-    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Empresa.Churras.Domain.Model.ValueObjects.Periodo">
     <Position X="12" Y="2" Width="1.5" />
@@ -52,5 +47,19 @@
       <FileName>ValueObjects\Coordenadas.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Empresa.Churras.Domain.Model.ValueObjects.EventoColegaConfirmado">
+    <Position X="8" Y="6.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ValueObjects\EventoColegaConfirmado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Empresa.Churras.Domain.Model.Enums.TipoEvento" Collapsed="true">
+    <Position X="13.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAABAAAAAAAAAAAAAkAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\TipoEvento.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

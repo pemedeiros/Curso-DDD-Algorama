@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Empresa.Churras.Domain.Model.Entities
 {
-    public class Evento : EntityKeySeq
+    public class Evento : EntityKeySeq, IAggregateRoot
     {
         public string Nome { get; set; }
         public long DonoDaCasaKey { get; set; }
@@ -16,6 +16,7 @@ namespace Empresa.Churras.Domain.Model.Entities
         public DateTime Dia { get; set; }
         public Periodo Periodo { get; set; }
         public IList<EventoColegaConfirmado> ColegasConfirmados { get; set; }
+
         public Evento()
         {
             ColegasConfirmados = new List<EventoColegaConfirmado>();
@@ -23,15 +24,13 @@ namespace Empresa.Churras.Domain.Model.Entities
 
         public void ConfirmarPresenca(Colega colega)
         {
-            if(ColegasConfirmados == null)
-            {
+            if (ColegasConfirmados == null)
                 ColegasConfirmados = new List<EventoColegaConfirmado>();
-            }
+
             ColegasConfirmados.Add(new EventoColegaConfirmado
             {
                 ColegaKey = colega.Key,
-                ColegaNome = colega.Nome,
-                OQueVaiLevar = string.Empty // Inicialmente vazio, pode ser preenchido depois
+                ColegaNome = colega.Nome
             });
         }
 
@@ -39,7 +38,7 @@ namespace Empresa.Churras.Domain.Model.Entities
         {
             if (ColegasConfirmados == null) return;
 
-            var confirmacao = ColegasConfirmados.FirstOrDefault(c => c.ColegaKey == colega.Key);
+            var confirmacao = ColegasConfirmados.FirstOrDefault(x => x.ColegaKey == colega.Key);
             if (confirmacao != null)
                 ColegasConfirmados.Remove(confirmacao);
         }
